@@ -1,7 +1,7 @@
 {
-  "name": "date-picker-svelte",
+  "name": "@rsousacode/date-picker-svelte",
   "version": "2.2.5",
-  "description": "Date and time picker for Svelte",
+  "description": "Date and time picker for Svelte using px instead of rem",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
@@ -40,10 +40,10 @@
   "homepage": "https://date-picker-svelte.kasper.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/probablykasper/date-picker-svelte.git"
+    "url": "git+https://github.com/rsousacode/date-picker-svelte.git"
   },
   "bugs": {
-    "url": "https://github.com/probablykasper/date-picker-svelte/issues"
+    "url": "https://github.com/rsousacode/date-picker-svelte/issues"
   },
   "author": {
     "name": "Kasper Henningsen",

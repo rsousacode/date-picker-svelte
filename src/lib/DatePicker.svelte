@@ -318,9 +318,9 @@
     background: var(--date-picker-background, #ffffff)
     user-select: none
     -webkit-user-select: none
-    padding: 0.5rem
+    padding: 5px
     cursor: default
-    font-size: 0.75rem
+    font-size: 7.5px
     border: 1px solid rgba(103, 113, 137, 0.3)
     border-radius: 3px
     box-shadow: 0px 2px 6px rgba(#000000,0.08), 0px 2px 6px rgba(#000000,0.11)
@@ -335,10 +335,10 @@
     display: flex
     justify-content: center
     align-items: center
-    padding-bottom: 0.5rem
+    padding-bottom: 5px
   .dropdown
-    margin-left: 0.25rem
-    margin-right: 0.25rem
+    margin-left: 2.5px
+    margin-right: 2.5px
     position: relative
     display: flex
     svg
@@ -347,7 +347,7 @@
       top: 0px
       height: 100%
       width: 8px
-      padding: 0rem 0.5rem
+      padding: 0 5px
       pointer-events: none
       box-sizing: content-box
   .month
@@ -361,8 +361,8 @@
     outline: none
   .page-button
     background-color: transparent
-    width: 1.5rem
-    height: 1.5rem
+    width: 15px
+    height: 15px
     flex-shrink: 0
     border-radius: 5px
     box-sizing: border-box
@@ -374,8 +374,8 @@
       background-color: rgba(#808080, 0.08)
       border: 1px solid rgba(#808080, 0.08)
     svg
-      width: 0.68rem
-      height: 0.68rem
+      width: 6.8px
+      height: 6.8px
   select.dummy-select
     position: absolute
     width: 100%
@@ -396,10 +396,9 @@
     -moz-appearance: none
     appearance: none
     flex-grow: 1
-    padding: 0rem 0.35rem
-    height: 1.5rem
-    padding-right: 1.3rem
-    margin: 0px
+    height: 15px
+    padding: 0 13px 0 3.5px
+    margin: 0
     border: 1px solid rgba(108, 120, 147, 0.3)
     outline: none
     transition: all 80ms cubic-bezier(0.4, 0.0, 0.2, 1)
@@ -410,7 +409,7 @@
     font-weight: 600
     padding-bottom: 2px
   .header-cell
-    width: 1.875rem
+    width: 18.75px
     text-align: center
     flex-grow: 1
 
@@ -420,8 +419,8 @@
     display: flex
     align-items: center
     justify-content: center
-    width: 2rem
-    height: 1.94rem
+    width: 20px
+    height: 19.4px
     flex-grow: 1
     border-radius: 5px
     box-sizing: border-box
