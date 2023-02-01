@@ -1,6 +1,6 @@
 {
   "name": "@rsousacode/date-picker-svelte",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Date and time picker for Svelte using px instead of rem",
   "type": "module",
   "scripts": {
