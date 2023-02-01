@@ -170,6 +170,7 @@
 
 <style lang="sass">
   .date-time-field
+    z-index: 100
     position: relative
   input.date-picker-input
     color: var(--date-picker-foreground, #000000)
