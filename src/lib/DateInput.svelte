@@ -143,6 +143,7 @@
 
 <div class="date-time-field" on:focusout={onFocusOut} on:keydown={keydown}>
   <input
+    class='date-picker-input'
     class:invalid={!valid}
     type="text"
     bind:value={text}
@@ -170,7 +171,7 @@
 <style lang="sass">
   .date-time-field
     position: relative
-  input
+  input.date-picker-input
     color: var(--date-picker-foreground, #000000)
     background: var(--date-picker-background, #ffffff)
     min-width: 0px

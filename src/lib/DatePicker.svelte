@@ -206,7 +206,7 @@
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div class="date-time-picker" on:focusout tabindex="0" on:keydown={keydown}>
   <div class="tab-container" tabindex="-1">
-    <div class="top">
+    <div class='date-picker-top'>
       <button
         type="button"
         class="page-button"
@@ -220,8 +220,9 @@
           /></svg
         >
       </button>
-      <div class="dropdown month">
+      <div class="date-picker-dropdown month">
         <select
+          class='date-picker-select'
           value={browseMonth}
           on:keydown={monthKeydown}
           on:input={(e) => setMonth(parseInt(e.currentTarget.value))}
@@ -241,7 +242,7 @@
           - `option { color: initial; background-color: initial }` causes invisible menu in Chrome
           - `select { background-color: $bg; color: $text }` causes white scrollbar in dark mode on Firefox
         -->
-        <select class="dummy-select" tabindex="-1">
+        <select class="date-picker-select dummy-select" tabindex="-1">
           {#each iLocale.months as monthName, i}
             <option value={i} selected={i === browseMonth}>{monthName}</option>
           {/each}
@@ -250,8 +251,9 @@
           ><path d="M6 0l12 12-12 12z" transform="rotate(90, 12, 12)" /></svg
         >
       </div>
-      <div class="dropdown year">
+      <div class="date-picker-dropdown year">
         <select
+          class='date-picker-select'
           value={browseYear}
           on:input={(e) => setYear(parseInt(e.currentTarget.value))}
           on:keydown={yearKeydown}
@@ -261,7 +263,7 @@
           {/each}
         </select>
         <!-- style <select> button without affecting menu popup -->
-        <select class="dummy-select" tabindex="-1">
+        <select class="date-picker-select dummy-select" tabindex="-1">
           {#each years as v}
             <option value={v} selected={v === browseDate.getFullYear()}>{v}</option>
           {/each}
@@ -281,7 +283,7 @@
         >
       </button>
     </div>
-    <div class="header">
+    <div class='date-picker-header'>
       {#each Array(7) as _, i}
         {#if i + iLocale.weekStartsOn < 7}
           <div class="header-cell">{iLocale.weekdays[iLocale.weekStartsOn + i]}</div>
@@ -331,12 +333,12 @@
       box-shadow: 0px 0px 0px 2px var(--date-picker-highlight-shadow, rgba(#0269f7, 0.4))
   .tab-container
     outline: none
-  .top
+  .date-picker-top
     display: flex
     justify-content: center
     align-items: center
     padding-bottom: 5px
-  .dropdown
+  .date-picker-dropdown
     margin-left: 2.5px
     margin-right: 2.5px
     position: relative
@@ -376,7 +378,7 @@
     svg
       width: 6.8px
       height: 6.8px
-  select.dummy-select
+  select.date-picker-select.dummy-select
     position: absolute
     width: 100%
     pointer-events: none
@@ -384,12 +386,12 @@
     color: var(--date-picker-foreground, #000000)
     background-color: var(--date-picker-background, #ffffff)
     border-radius: 3px
-  select:focus + select.dummy-select
+  select.date-picker-select:focus + select.dummy-select
     border-color: var(--date-picker-highlight-border, #0269f7)
     box-shadow: 0px 0px 0px 2px var(--date-picker-highlight-shadow, rgba(#0269f7, 0.4))
-  select:not(.dummy-select)
+  select.date-picker-select:not(.dummy-select)
     opacity: 0
-  select
+  select.date-picker-select
     font-size: inherit
     font-family: inherit
     -webkit-appearance: none
@@ -404,7 +406,7 @@
     transition: all 80ms cubic-bezier(0.4, 0.0, 0.2, 1)
     background-image: none
 
-  .header
+  .date-picker-header
     display: flex
     font-weight: 600
     padding-bottom: 2px
