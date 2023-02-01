@@ -367,6 +367,7 @@
     height: 15px
     flex-shrink: 0
     border-radius: 5px
+    padding: 0
     box-sizing: border-box
     border: 1px solid transparent
     display: flex
