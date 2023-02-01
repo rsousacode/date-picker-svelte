@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2.3.0 - 2023 Feb 1
-- Allow custom CSS class(es) in the input field via customFieldClass prop
+- Allow custom CSS class(es) in the input field via customFieldClasses prop
 
 ## 2.2.9 - 2023 Feb 1
 - Set font-size to 11px
