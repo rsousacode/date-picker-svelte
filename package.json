@@ -1,7 +1,7 @@
 {
   "name": "@rsousacode/date-picker-svelte",
-  "version": "2.2.7",
-  "description": "Date and time picker for Svelte using px instead of rem",
+  "version": "2.3.0",
+  "description": "Date and time picker for Svelte using px instead of rem and CSS changes to be compatible with Beercss.",
   "type": "module",
   "scripts": {
     "dev": "vite dev",

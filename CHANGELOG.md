@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.3.0 - 2023 Feb 1
+- Allow custom CSS class(es) in the input field via customFieldClass prop
+
+## 2.2.9 - 2023 Feb 1
+- Set font-size to 11px
+
+## 2.2.8 - 2023 Feb 1
+- Use 0 padding in the "page-button" class
+
+## 2.2.7 - 2023 Feb 1
+- Increase z-index 
+
+## 2.2.6 - 2023 Feb 1
+- Use px instead of rem
+- Update css classes to avoid css class collision with other css framworks
+
 ## 2.2.5 - 2022 Dec 13
 - Fix month/year not updating when `value` is assigned to
 

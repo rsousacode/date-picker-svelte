@@ -47,6 +47,9 @@
   /** Disable the input **/
   export let disabled = false
 
+  /** Allow custom field classes **/
+  export let customFieldClasses = "";
+
   /** Format string */
   export let format = 'yyyy-MM-dd HH:mm:ss'
   let formatTokens = createFormat(format)
@@ -141,7 +144,7 @@
   }
 </script>
 
-<div class="date-time-field" on:focusout={onFocusOut} on:keydown={keydown}>
+<div class="date-time-field {customFieldClasses}" on:focusout={onFocusOut} on:keydown={keydown}>
   <input
     class='date-picker-input'
     class:invalid={!valid}

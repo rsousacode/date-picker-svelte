@@ -322,7 +322,7 @@
     -webkit-user-select: none
     padding: 5px
     cursor: default
-    font-size: 7.5px
+    font-size: 11px
     border: 1px solid rgba(103, 113, 137, 0.3)
     border-radius: 3px
     box-shadow: 0px 2px 6px rgba(#000000,0.08), 0px 2px 6px rgba(#000000,0.11)
